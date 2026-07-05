@@ -3,13 +3,13 @@
 
 <head>
   <!-- Analytics placeholder (add GTM/GA here if needed) -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link rel="icon" type="image/png" href="assets/img/logo.png"/>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Learning &amp; Generation Lab</title>
-  <meta content="" name="descriptison">
-  <meta content="" name="keywords">
+  <meta content="Learning & Generation Lab studies the principles of learning, representation, generation, and machine intelligence at The Hong Kong Polytechnic University." name="description">
+  <meta content="machine learning, representation learning, generative AI, computer vision, machine intelligence, PolyU" name="keywords">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -46,14 +46,14 @@
 
     <div class="container">
 
-      <h1><a href="index.html"><span class="lg-line"><span class="lg-word learning">Learning</span> <span class="amp">&amp;</span> <span class="lg-word generation">Generation</span> Lab</span></a></h1>
-      <h2 style="color:#444">We are <span class="typing" style="color:#c1121f"></span></h2>
+      <h1><a href="index.html" class="brand-link"><span class="brand-symbol" aria-hidden="true"><img src="assets/img/logo.png" alt=""></span><span class="lg-line"><span class="lg-word learning">Learning</span> <span class="amp">&amp;</span> <span class="lg-word generation">Generation</span> Lab</span></a></h1>
+      <h2>Learning to <span class="typing"></span></h2>
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li><a href="#about"> <span>Home</span></a></li>
           <li><a href="#publications"> <span>Publications</span></a></li>
           <li><a href="#team"> <span>Team</span></a></li>
-          <li><a href="#contacts"> <span>Contact</span></a></li>
+          <li><a href="#join"> <span>Join Us</span></a></li>
         </ul>
       </nav><!-- .nav-menu -->
 
@@ -64,6 +64,8 @@
 
     </div>
   </header><!-- End Header -->
+
+  <div class="route-transition-line" aria-hidden="true"></div>
 
   <!-- ======= Home (Lab About) Section ======= -->
   <section id="about" class="about">
@@ -83,11 +85,25 @@
   </section>
   <!-- End Team Section -->
 
-  <!-- ======= Contact Section ======= -->
-  <section id="contacts" class="contact">
-    <div data-include="partials/contact.html"></div>
+  <!-- ======= Join Us Section ======= -->
+  <section id="join" class="contact">
+    <div data-include="partials/join.html"></div>
   </section>
-  <!-- End Contact Section -->
+  <!-- End Join Us Section -->
+
+  <footer id="footer" class="site-footer">
+    <div class="container">
+      <div>
+        <strong>Learning &amp; Generation Lab</strong>
+        <p><a href="https://www.polyu.edu.hk/dsai/" target="_blank" rel="noopener">Department of Data Science and Artificial Intelligence</a> · <a href="https://www.polyu.edu.hk/" target="_blank" rel="noopener">The Hong Kong Polytechnic University</a></p>
+      </div>
+      <div>
+        <p>4/F, Chung Sze Yuen Building,</p>
+        <p>The Hong Kong Polytechnic University</p>
+        <p>Hung Hom, Kowloon, Hong Kong</p>
+      </div>
+    </div>
+  </footer>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
@@ -112,8 +128,8 @@
 
       // Subtitle typing continues looping
       new Typed('.typing', {
-        strings: ['a research lab', 'open-source builders', 'curious minds'],
-      typeSpeed: 65,
+        strings: ['represent', 'generate', 'generalize'],
+        typeSpeed: 65,
         backSpeed: 65,
         loop: true
     });
@@ -123,6 +139,7 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/includes.js"></script>
+  <script src="assets/js/content-loader.js"></script>
 
 </body>
 

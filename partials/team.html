@@ -1,69 +1,16 @@
 <div class="container">
   <div class="section-title">
     <h2>Team</h2>
+    <p>People</p>
   </div>
 
   <h2>Faculty</h2>
-  <div id="faculty-grid" style="display: flex; flex-wrap: wrap; width:100%; margin-top: 20px;">
-    <a href="#">
-      <div style="width:140px; float: center; text-align: center; margin-right: 40px; margin-bottom: 35px;">
-        <img style="width: 100%; border-radius:5px;" src="assets/img/profile.jpeg">
-        <b>PI Name</b>
-        <p>Faculty</p>
-      </div>
-    </a>
+  <div id="faculty-grid" class="people-grid" data-source="data/people/index.json" data-group="faculty">
+    <p class="content-loading">Loading faculty...</p>
   </div>
 
   <h2>Members</h2>
-  <div id="student-grid" style="display: flex; flex-wrap: wrap; width:100%; margin-top: 20px;">
-    <a href="#">
-      <div style="width:140px; float: center; text-align: center; margin-right: 40px; margin-bottom: 35px;">
-        <img style="width: 100%; border-radius:5px;" src="assets/img/me.jpg">
-        <b>Jiawei Yang</b>
-        <p>Ph.D. Student</p>
-      </div>
-    </a>
-    <a href="#">
-      <div style="width:140px; float: center; text-align: center; margin-right: 40px; margin-bottom: 35px;">
-        <img style="width: 100%; border-radius:5px;" src="assets/img/me.jpg">
-        <b>Junjie Ye</b>
-        <p>Ph.D. Student</p>
-      </div>
-    </a>
-    <a href="#">
-      <div style="width:140px; float: center; text-align: center; margin-right: 40px; margin-bottom: 35px;">
-        <img style="width: 100%; border-radius:5px;" src="assets/img/me.jpg">
-        <b>Jiageng Mao</b>
-        <p>Ph.D. Student</p>
-      </div>
-    </a>
-    <a href="#">
-      <div style="width:140px; float: center; text-align: center; margin-right: 40px; margin-bottom: 35px;">
-        <img style="width: 100%; border-radius:5px;" src="assets/img/me.jpg">
-        <b>Emily Yue-ting Jia</b>
-        <p>Ph.D. Student w/ Yajie Zhao</p>
-      </div>
-    </a>
-    <a href="#">
-      <div style="width:140px; float: center; text-align: center; margin-right: 40px; margin-bottom: 35px;">
-        <img style="width: 100%; border-radius:5px;" src="assets/img/me.jpg">
-        <b>Siheng Zhao</b>
-        <p>Ph.D. Student</p>
-      </div>
-    </a>
-    <a href="#">
-      <div style="width:140px; float: center; text-align: center; margin-right: 40px; margin-bottom: 35px;">
-        <img style="width: 100%; border-radius:5px;" src="assets/img/me.jpg">
-        <b>Member Name</b>
-        <p>Master's Student</p>
-      </div>
-    </a>
-    <a href="#">
-      <div style="width:140px; float: center; text-align: center; margin-right: 40px; margin-bottom: 35px;">
-        <img style="width: 100%; border-radius:5px;" src="assets/img/me.jpg">
-        <b>Member Name</b>
-        <p>Undergraduate Student</p>
-      </div>
-    </a>
+  <div id="student-grid" class="people-grid" data-source="data/people/index.json" data-group="member">
+    <p class="content-loading">Loading members...</p>
   </div>
 </div>
