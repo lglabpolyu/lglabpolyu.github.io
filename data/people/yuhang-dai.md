@@ -5,6 +5,6 @@ group: member
 image: assets/img/daiyuhang.jpg
 homepage: https://hiteacheriamhumble.github.io/
 scholar: 
-github:
+github: 
 email:
 ---
