@@ -7,7 +7,7 @@ date: 2026/6/16
 image: assets/img/sae.gif
 paper: https://arxiv.org/abs/2606.18322
 project: https://mingyuee88.github.io/sae-post-intervention-recovery/
-code: https://github.com/Mingyuee88/sae-post-intervention-recoverysa'e
+code: https://github.com/Mingyuee88/sae-post-intervention-recovery
 highlight: false
 type: preprint
 ---
