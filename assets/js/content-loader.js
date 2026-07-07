@@ -88,9 +88,12 @@
     return manifestUrl.replace(/[^\/]+$/, '') + itemPath;
   }
 
-  function linkButton(url, label) {
+  function linkButton(url, label, iconClass) {
     if (!has(url)) return '';
-    return '<a href="' + escapeHtml(url) + '" target="_blank" rel="noopener">' + escapeHtml(label) + '</a>';
+    return '<a href="' + escapeHtml(url) + '" target="_blank" rel="noopener" aria-label="' + escapeHtml(label) + '">' +
+      '<i class="' + escapeHtml(iconClass) + '" aria-hidden="true"></i>' +
+      '<span>' + escapeHtml(label) + '</span>' +
+    '</a>';
   }
 
   function renderPublication(item) {
@@ -106,13 +109,13 @@
     var textCol = has(item.image) ? 'col-lg-8' : 'col-lg-12';
     var meta = [item.venue, item.year].filter(has).map(escapeHtml).join(' / ');
     var links = [
-      linkButton(item.paper, 'Paper'),
-      linkButton(item.project, 'Project Page'),
-      linkButton(item.code, 'Code'),
-      linkButton(item.webpage, 'Webpage'),
-      linkButton(item.demo, 'Demo'),
-      linkButton(item.dataset, 'Dataset'),
-      linkButton(item.bibtex, 'BibTeX')
+      linkButton(item.project, 'Project', 'bx bx-link-external'),
+      linkButton(item.paper, 'Paper', 'bx bx-file-blank'),
+      linkButton(item.code, 'Code', 'bx bxl-github'),
+      linkButton(item.webpage, 'Webpage', 'bx bx-globe'),
+      linkButton(item.demo, 'Demo', 'bx bx-play-circle'),
+      linkButton(item.dataset, 'Dataset', 'bx bx-data'),
+      linkButton(item.bibtex, 'BibTeX', 'bx bx-book-bookmark')
     ].filter(has).join('');
 
     return [
