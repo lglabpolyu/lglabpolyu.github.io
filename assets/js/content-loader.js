@@ -181,22 +181,21 @@
     });
   }
 
-  function personLink(url, label) {
+  function personIconLink(url, label, iconClass, external) {
     if (!has(url)) return '';
-    return '<a href="' + escapeHtml(url) + '" target="_blank" rel="noopener">' + escapeHtml(label) + '</a>';
+    var target = external ? ' target="_blank" rel="noopener"' : '';
+    return '<a href="' + escapeHtml(url) + '"' + target + ' aria-label="' + escapeHtml(label) + '" title="' + escapeHtml(label) + '"><i class="' + escapeHtml(iconClass) + '" aria-hidden="true"></i></a>';
   }
 
   function renderPerson(person) {
     var name = escapeHtml(person.name || 'Unnamed');
-    var nameHtml = has(person.homepage)
-      ? '<a class="person-name" href="' + escapeHtml(person.homepage) + '" target="_blank" rel="noopener">' + name + '</a>'
-      : '<span class="person-name">' + name + '</span>';
+    var nameHtml = '<span class="person-name">' + name + '</span>';
     var links = [
-      personLink(person.homepage, 'Home'),
-      personLink(person.scholar, 'Scholar'),
-      personLink(person.github, 'GitHub'),
-      personLink(person.linkedin, 'LinkedIn'),
-      has(person.email) ? '<a href="mailto:' + escapeHtml(person.email) + '">Email</a>' : ''
+      personIconLink(person.homepage, 'Home', 'bx bx-home', true),
+      personIconLink(person.scholar, 'Google Scholar', 'bx bxs-graduation', true),
+      personIconLink(person.github, 'GitHub', 'bx bxl-github', true),
+      personIconLink(person.linkedin, 'LinkedIn', 'bx bxl-linkedin', true),
+      has(person.email) ? personIconLink('mailto:' + text(person.email), 'Email', 'bx bx-envelope', false) : ''
     ].filter(has).join('');
 
     return [
