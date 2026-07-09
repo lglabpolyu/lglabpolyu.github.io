@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1254" height="1254" viewBox="0 0 1254 1254" version="1.1" role="img" aria-label="LG logo vector with unified gradient G">
+  <defs>
+    <linearGradient id="lRedGrad" x1="360" y1="260" x2="790" y2="820" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#8F0026"/>
+      <stop offset="55%" stop-color="#B2052D"/>
+      <stop offset="100%" stop-color="#930826"/>
+    </linearGradient>
+
+    <linearGradient id="gTopGrad" x1="500" y1="295" x2="945" y2="475" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#282828"/>
+      <stop offset="100%" stop-color="#1F1F1F"/>
+    </linearGradient>
+
+    <!-- Unified lower/right G piece with bottom-focused radial gradient -->
+    <radialGradient id="gLowerUnifiedGrad" cx="610" cy="930" r="380" fx="560" fy="930" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#B2052D"/>
+      <stop offset="28%" stop-color="#B2052D"/>
+      <stop offset="50%" stop-color="#8F0B28"/>
+      <stop offset="68%" stop-color="#4A2528"/>
+      <stop offset="82%" stop-color="#2D2D2D"/>
+      <stop offset="100%" stop-color="#242424"/>
+    </radialGradient>
+  </defs>
+
+  <g id="LG-logo" fill-rule="evenodd" shape-rendering="geometricPrecision">
+    <!-- L -->
+    <path id="L" fill="url(#lRedGrad)" d="M363 352 L456 259 L456 733 L784 733 L706 815 L363 815 Z"/>
+
+    <!-- G top arc -->
+    <path id="G-top-arc" fill="url(#gTopGrad)" d="M504 340 C615 276 753 276 860 350 C899 377 928 418 943 473 L853 473 C814 411 747 373 668 373 C604 373 545 396 504 438 Z"/>
+
+    <!-- G lower/right half as one single continuous shape -->
+    <path id="G-lower-unified-gradient" fill="url(#gLowerUnifiedGrad)"
+          d="M421 856
+             L673 856
+             C735 856 790 829 830 785
+             C867 744 890 695 895 647
+             L643 647
+             L713 567
+             L967 567
+             C976 703 929 819 842 890
+             C785 936 712 962 631 962
+             C545 962 472 923 421 856
+             Z"/>
+  </g>
+</svg>
